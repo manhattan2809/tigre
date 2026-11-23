@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tigre</title>
+  <meta name="description" content="Tigre: tu registro de running y gimnasio. Funciona sin internet.">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Tigre">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="update-bar" class="update-bar" hidden>
+    <span>Hay una actualización</span>
+    <button type="button" id="update-btn">Actualizar</button>
+  </div>
+
+  <main id="view" class="view" aria-live="polite">
+    <div class="splash"><div class="logo-mark">T</div></div>
+  </main>
+
+  <div id="timer" class="timer" hidden></div>
+
+  <nav id="tabbar" class="tabbar" hidden>
+    <a href="#/hoy" data-tab="hoy"><span class="ti" data-icon="today"></span><span>Hoy</span></a>
+    <a href="#/calendario" data-tab="calendario"><span class="ti" data-icon="calendar"></span><span>Calendario</span></a>
+    <a href="#/progreso" data-tab="progreso"><span class="ti" data-icon="chart"></span><span>Progreso</span></a>
+    <a href="#/resumen" data-tab="resumen"><span class="ti" data-icon="summary"></span><span>Resumen</span></a>
+    <a href="#/ajustes" data-tab="ajustes"><span class="ti" data-icon="settings"></span><span>Ajustes</span></a>
+  </nav>
+
+  <div id="sheet-root"></div>
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
